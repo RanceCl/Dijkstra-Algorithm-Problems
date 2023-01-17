@@ -1,0 +1,18 @@
+lab6TestPlan
+Roderick "Rance" White
+roderiw
+ECE 2230 Fall 2020
+MP6
+
+
+The interface MP6 was created largely using the interfaces of previous projects as examples. The function to collect the command line arguments was constructed and tested using prints to determine if it would work as intended. The results showed no errors. 
+
+It was decided that the best way to overall represent the graph was with an adjacency matrix. The functions to the construct the graph were based on the functions in heap2.c and a few functions of MP1, tested and showing no errors. Later, it was determined that having a matrix of graph items would be useful, so the construct and destruct functions were edited to produce an array to be held within the structure. The methods for each graph were described in the lab instructions given.
+
+The shortest path function was constructed using the Dijkstra pseudocode, with some additions to work with the graph design. Some issues were found regarding correct predecessors, though this was repaired. Another function was created to print the shorest path between the desired points.
+
+The network diameter functions used the shortest path functions to work, finding the shortest path between all points and comparing to find the largest path. Some errors were found due to me not accounting for infinity, though this was easily fixed. 
+
+Finally, the multiple link-disjoint paths function used the shortest path functions as well, setting the adjacencies in the adjacency matrix to infinity for the shorest path found, indicating that a path no longer existed. This was repeated until no path between the points remained. 
+
+

@@ -1,0 +1,34 @@
+lab6PerformanceEvaluation
+Roderick "Rance" White
+roderiw
+ECE 2230 Fall 2020
+MP6
+
+1. 
+The time taken for Shortest Path function with 800 vertices trying to find the path from 0 to 799, while normally taking aroud 80 milliseconds, would occassionally pass the threshold. When decreased to 400 vertices and trying to find the path between 0 and 399 consistently took around 21 milliseconds, which is close to 1/4 of the time for the previous test. 
+
+
+For a random graph, the time at 1000 vertices finding the 0 -> 999 path was around 1 second, with the time at 500 vertices trying to find the 0 -> 499 was around 25 milliseconds, which is close to 1/4 of the time for the previous test.
+
+
+2.
+The random graph took around 1 second for a graph of 100 vertices. When repeated with a graph of half the size, the test took around 17 seconds, which is close to 1/4 of the time.
+
+
+3.
+When using a 100 vertex random graph with an average of 7 adjacent vertices, the result was that the graph usually was not connected. When the adjacent vertices was changed to 20, the graph was far more likely to be connected.
+
+
+4.
+When finding the Multiple Link Disjoint Paths for a type 3 graph, the number of paths was always one less than the number of vertices in the graph, due to all of them being connected.
+
+
+
+
+
+
+
+
+
+
+
